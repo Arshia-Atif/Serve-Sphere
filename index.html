@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ServeSphere - Welcome</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Serve<span class="logo-accent">Sphere</span></div>
+    <button class="btn-primary" onclick="openAuthModal()">Sign In / Sign Up</button>
+  </nav>
+
+  <div class="banner-wrapper">
+    <div class="banner-track marquee-track">
+      <div class="banner-item">⚡ Instant Service Booking</div>
+      <div class="banner-item">⭐ 4.9/5 Average Provider Rating</div>
+      <div class="banner-item">🛠️ 100+ Verified Local Experts</div>
+      <div class="banner-item">🔒 Realtime Status Tracking</div>
+      <div class="banner-item">⚡ Instant Service Booking</div>
+      <div class="banner-item">⭐ 4.9/5 Average Provider Rating</div>
+    </div>
+  </div>
+
+  <main class="container">
+    <section class="hero-section landing-hero glow-box">
+      <h1 class="gradient-text">On-Demand Local Services, Reimagined</h1>
+      <p>Connect with top-rated local professionals across 8+ specialized service categories in real time.</p>
+      <div style="margin-top: 1.5rem;">
+        <button class="btn-primary btn-large" onclick="openAuthModal()">Get Started & Book Now</button>
+      </div>
+    </section>
+
+    <section class="landing-services-section">
+      <h2 class="section-title gradient-text">Featured Service Categories</h2>
+      <div class="services-banner-grid">
+        
+        <div class="service-banner-card glow-box" onclick="openAuthModal()">
+          <div class="service-banner-icon">🚰</div>
+          <div class="service-banner-content">
+            <h3>Plumbing Services</h3>
+            <p>Leak repairs, pipe installations, drain unblocking, and emergency fixes.</p>
+            <div class="service-banner-footer">
+              <span class="badge">Starting at $45/hr</span>
+              <span class="banner-link">Book Now →</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-banner-card glow-box" onclick="openAuthModal()">
+          <div class="service-banner-icon">⚡</div>
+          <div class="service-banner-content">
+            <h3>Electrical Repairs</h3>
+            <p>Wiring, circuit fixes, light fixtures, and breaker panel upgrades.</p>
+            <div class="service-banner-footer">
+              <span class="badge">Starting at $55/hr</span>
+              <span class="banner-link">Book Now →</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-banner-card glow-box" onclick="openAuthModal()">
+          <div class="service-banner-icon">🧹</div>
+          <div class="service-banner-content">
+            <h3>Deep House Cleaning</h3>
+            <p>Full house cleaning, post-renovation cleanup, and move-in/out services.</p>
+            <div class="service-banner-footer">
+              <span class="badge">Starting at $35/hr</span>
+              <span class="banner-link">Book Now →</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-banner-card glow-box" onclick="openAuthModal()">
+          <div class="service-banner-icon">🪚</div>
+          <div class="service-banner-content">
+            <h3>Carpentry & Woodwork</h3>
+            <p>Custom furniture repair, door installation, shelving, and cabinetry.</p>
+            <div class="service-banner-footer">
+              <span class="badge">Starting at $60/hr</span>
+              <span class="banner-link">Book Now →</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-banner-card glow-box" onclick="openAuthModal()">
+          <div class="service-banner-icon">🎨</div>
+          <div class="service-banner-content">
+            <h3>Interior Painting</h3>
+            <p>Interior wall painting, accent walls, touch-ups, and surface priming.</p>
+            <div class="service-banner-footer">
+              <span class="badge">Starting at $40/hr</span>
+              <span class="banner-link">Book Now →</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-banner-card glow-box" onclick="openAuthModal()">
+          <div class="service-banner-icon">🔧</div>
+          <div class="service-banner-content">
+            <h3>Appliance Repair</h3>
+            <p>Refrigerators, washing machines, ovens, and AC unit maintenance.</p>
+            <div class="service-banner-footer">
+              <span class="badge">Starting at $50/hr</span>
+              <span class="banner-link">Book Now →</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-banner-card glow-box" onclick="openAuthModal()">
+          <div class="service-banner-icon">🌿</div>
+          <div class="service-banner-content">
+            <h3>Lawn & Gardening</h3>
+            <p>Mowing, hedge trimming, weed control, and general yard cleanup.</p>
+            <div class="service-banner-footer">
+              <span class="badge">Starting at $30/hr</span>
+              <span class="banner-link">Book Now →</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-banner-card glow-box" onclick="openAuthModal()">
+          <div class="service-banner-icon">🔐</div>
+          <div class="service-banner-content">
+            <h3>Locksmith & Security</h3>
+            <p>Lock replacements, key cutting, re-keying, and emergency door unlocks.</p>
+            <div class="service-banner-footer">
+              <span class="badge">Starting at $50/hr</span>
+              <span class="banner-link">Book Now →</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="services-banner">
+      <div class="banner-track marquee-reverse">
+        <span class="cat-pill">🚰 Plumbing</span>
+        <span class="cat-pill">⚡ Electrical</span>
+        <span class="cat-pill">🧹 Cleaning</span>
+        <span class="cat-pill">🪚 Carpentry</span>
+        <span class="cat-pill">🎨 Painting</span>
+        <span class="cat-pill">🔧 Appliance Repair</span>
+        <span class="cat-pill">🌿 Gardening</span>
+        <span class="cat-pill">🔐 Locksmith</span>
+      </div>
+    </div>
+  </main>
+
+  <div id="auth-modal" class="modal hidden">
+    <div class="modal-content glow-box">
+      <span class="close-btn" id="close-auth-modal">&times;</span>
+      <h2 id="auth-title" class="gradient-text">Welcome to ServeSphere</h2>
+      
+      <button id="google-auth-btn" class="btn-google">
+        <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#EA4335" d="M12 5c1.6 0 3 .6 4.1 1.6l3.1-3.1C17.3 1.7 14.8 1 12 1 7.5 1 3.7 3.6 1.9 7.3l3.7 2.9C6.5 7.3 9 5 12 5z"/><path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.7-.2-2.3H12v4.6h6.5c-.3 1.5-1.1 2.8-2.4 3.7l3.7 2.9c2.2-2 3.7-5 3.7-8.9z"/><path fill="#FBBC05" d="M5.6 14.8c-.2-.7-.4-1.5-.4-2.3s.2-1.6.4-2.3L1.9 7.3C.7 9.7 0 10.8 0 12s.7 2.3 1.9 4.7l3.7-1.9z"/><path fill="#34A853" d="M12 23c3.2 0 6-1.1 8-3l-3.7-2.9c-1.1.7-2.5 1.2-4.3 1.2-3 0-5.5-2.3-6.4-5.2L1.9 16C3.7 19.7 7.5 23 12 23z"/></svg>
+        Continue with Google
+      </button>
+
+      <div class="divider"><span>OR</span></div>
+
+      <form id="auth-form">
+        <label for="auth-email">Email Address</label>
+        <input type="email" id="auth-email" required placeholder="user@servesphere.com">
+
+        <label for="auth-password">Password</label>
+        <input type="password" id="auth-password" required placeholder="••••••••">
+
+        <div id="auth-role-group" class="hidden">
+          <label for="auth-role">Account Type</label>
+          <select id="auth-role">
+            <option value="customer">Customer</option>
+            <option value="provider">Service Provider</option>
+          </select>
+
+          <div id="provider-fields" class="hidden">
+            <label for="auth-service">Service Category</label>
+            <select id="auth-service">
+              <option value="Plumbing">Plumbing</option>
+              <option value="Electrical">Electrical</option>
+              <option value="Cleaning">Cleaning</option>
+              <option value="Carpentry">Carpentry</option>
+              <option value="Painting">Painting</option>
+              <option value="Appliance Repair">Appliance Repair</option>
+              <option value="Gardening">Gardening</option>
+              <option value="Locksmith">Locksmith</option>
+            </select>
+            <label for="auth-location">Location / City</label>
+            <input type="text" id="auth-location" placeholder="Downtown">
+            <label for="auth-price">Hourly Rate ($)</label>
+            <input type="number" id="auth-price" placeholder="60">
+          </div>
+        </div>
+
+        <button type="submit" id="auth-submit-btn" class="btn-primary">Sign In</button>
+        <p class="toggle-auth">
+          <span id="auth-toggle-text">Don't have an account?</span> 
+          <a href="#" id="auth-toggle-btn">Sign Up</a>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="landing.js"></script>
+</body>
+</html>

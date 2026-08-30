@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ServeSphere - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Serve<span class="logo-accent">Sphere</span></div>
+    <div id="nav-actions" class="nav-links"></div>
+  </nav>
+
+  <main class="container">
+    <section id="directory-view" class="view active">
+      <div class="hero-section">
+        <h1 class="gradient-text">Available Service Providers</h1>
+        <p>Book verified local professionals instantly.</p>
+      </div>
+
+      <div class="filter-bar glow-box">
+        <input type="text" id="search-input" placeholder="Search providers or locations...">
+        <select id="category-filter">
+          <option value="All">All Categories</option>
+          <option value="Plumbing">Plumbing</option>
+          <option value="Electrical">Electrical</option>
+          <option value="Cleaning">Cleaning</option>
+          <option value="Carpentry">Carpentry</option>
+          <option value="Painting">Painting</option>
+          <option value="Appliance Repair">Appliance Repair</option>
+          <option value="Gardening">Gardening</option>
+          <option value="Locksmith">Locksmith</option>
+        </select>
+      </div>
+
+      <div id="provider-grid" class="grid"></div>
+    </section>
+
+    <div id="booking-modal" class="modal hidden">
+      <div class="modal-content glow-box">
+        <span class="close-btn" id="close-booking-modal">&times;</span>
+        <h2 class="gradient-text">Book Service</h2>
+        <p id="modal-provider-name" class="subtitle"></p>
+        <form id="booking-form">
+          <input type="hidden" id="booking-provider-id">
+          
+          <label for="booking-date">Date</label>
+          <input type="date" id="booking-date" required>
+
+          <label for="booking-time">Time</label>
+          <input type="time" id="booking-time" required>
+
+          <label for="booking-location">Location / Address</label>
+          <input type="text" id="booking-location" required placeholder="123 Cyber Way, Suite 404">
+
+          <label for="booking-desc">Description of Work</label>
+          <textarea id="booking-desc" rows="3" required placeholder="Describe what you need fixed..."></textarea>
+
+          <button type="submit" class="btn-primary">Confirm Booking</button>
+        </form>
+      </div>
+    </div>
+
+    <section id="customer-view" class="view">
+      <h2 class="gradient-text">My Customer Bookings</h2>
+      <div id="customer-bookings-list" class="list-container"></div>
+    </section>
+
+    <section id="provider-view" class="view">
+      <h2 class="gradient-text">Incoming Service Requests</h2>
+      <div id="provider-bookings-list" class="list-container"></div>
+    </section>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
